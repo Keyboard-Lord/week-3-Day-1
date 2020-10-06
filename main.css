@@ -8,26 +8,29 @@
     background-color: pink;
     background-image: url(background.jpg);
 }
-
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: palevioletred;
+}
 #leftSide {
-    padding: 2px;
-    float: left;
+    padding: 5px;
     background-color: palevioletred;
     box-sizing: border-box;
     height: 75px;
     text-align: left;
     position: relative;
-    width: 50%;
+    align-content: flex-start;
 }
 #rightSide {
-    padding: 2px;
-    float: right;
-    background-color: palevioletred;
+    padding: 5px;
+    
     box-sizing: border-box;
     height: 75px;
     text-align: right;
     position: relative;
-    width: 50%;
+
+    align-content: flex-end;
 }
   
   #problem2 {
@@ -36,9 +39,9 @@
 }
   
   #cardsContainer {
-    display: inline-block;
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
   
   .card {
@@ -46,7 +49,6 @@
     background-color: #dfd;
     margin-right: 10px;
     margin-top: 100px;
-    float: left;
     box-sizing: border-box;
     height: 630px;
     width: 300px;
